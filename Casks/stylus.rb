@@ -8,7 +8,7 @@ cask "stylus" do
   homepage "https://github.com/1905/stylus-spotify-mini-player"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Stylus.app"
 
