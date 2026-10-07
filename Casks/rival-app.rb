@@ -1,6 +1,6 @@
 cask "rival-app" do
-  version "4.1.1"
-  sha256 "56104fa675fac07056e33a4006e570949220e75b4bfd44c4e929b436dd3ff7df"
+  version "4.2.0"
+  sha256 "da8d28fce8c726aa6f9e7671dd057706ae470aee39862e5d7dcc8ed67ecba842"
 
   url "https://github.com/1905/rival/releases/download/v#{version}/Rival-app.zip"
   name "Rival"
