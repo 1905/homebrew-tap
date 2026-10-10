@@ -7,13 +7,13 @@ cask "rival-app" do
   desc "Menu bar + window dashboard for rival review runs"
   homepage "https://github.com/1905/rival"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Rival.app"
 
   # The app is ad-hoc signed, not notarized. Strip the quarantine flag so
   # Gatekeeper lets it launch (verified in the P0 spike, 2026-09-26).
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Rival.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Rival.app"]
   end
 end

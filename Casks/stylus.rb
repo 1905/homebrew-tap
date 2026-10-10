@@ -13,8 +13,8 @@ cask "stylus" do
   app "Stylus.app"
 
   # Stylus is not signed with an Apple Developer ID: clear the quarantine flag so it opens
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Stylus.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Stylus.app"]
   end
 
   zap trash: [
