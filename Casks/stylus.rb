@@ -1,6 +1,6 @@
 cask "stylus" do
-  version "0.1.0"
-  sha256 "426e3b7f6b68ad1ad89668c72f1e0c2912c3631b980f23b32a7f30567c17ff74"
+  version "0.2.0"
+  sha256 "f658ad548b1cd629520076010f2a47e8664cd9d04c305bb78efcf007943c2cef"
 
   url "https://github.com/1905/stylus-spotify-mini-player/releases/download/v#{version}/Stylus.dmg"
   name "Stylus"
